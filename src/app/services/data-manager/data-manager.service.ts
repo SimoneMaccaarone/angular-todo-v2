@@ -6,7 +6,7 @@ import { Todo } from 'src/app/models/todo';
 })
 export class DataManagerService {
 
-  todos: Todo[]:
+  todos: Todo[];
 
   constructor() {
     this.todos = [
@@ -29,5 +29,18 @@ export class DataManagerService {
         priority: 1
       }
     ]
+  }
+
+
+  //--- function AddTodo ---
+  addTodo(newTodo: Todo) {
+    this.todos.push(newTodo);
+  }
+
+  //--- function deleteTodo ---
+  deleteTodo(todoToDelete: Todo){
+    console.log('Devo cancellare',todoToDelete.title);
+    this.todos= this.todos?.filter(t => t.title !== todoToDelete.title); // La Filter() dice cosa tenere; tieni tutti i todo che sono diversi dal TODO.title che è arrivato
+
   }
 }

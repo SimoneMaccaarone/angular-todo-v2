@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component} from '@angular/core';
 import { Todo } from 'src/app/models/todo';
+import { DataManagerService } from 'src/app/services/data-manager/data-manager.service';
 
 @Component({
   selector: 'app-todo-list',
@@ -8,11 +9,11 @@ import { Todo } from 'src/app/models/todo';
 })
 export class TodoListComponent {
 
-  @Input() todoArray?: Todo[] = [];      //default, questa proprieta puo essere riempita tramite l' HTML (input)
+todoArray?: Todo[] = [];      //default, questa proprieta puo essere riempita tramite l' HTML (input)
 
-  deleteTodo(todoToDelete: Todo){
-    console.log('Devo cancellare',todoToDelete.title);
-    this.todoArray= this.todoArray?.filter(t => t.title !== todoToDelete.title); // La Filter() dice cosa tenere; tieni tutti i todo che sono diversi dal TODO.title che è arrivato
-  }
+constructor(private dataManagerServ: DataManagerService){
+  this.todoArray= this.dataManagerServ.todos;
+
+}
 
 }
