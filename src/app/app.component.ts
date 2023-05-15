@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Todo } from './models/todo';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +6,4 @@ import { Todo } from './models/todo';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-todos: Todo[]|undefined;
-addTodo: any;
-  title: any;
-
 }

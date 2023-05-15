@@ -10,15 +10,15 @@ import { DataManagerService } from 'src/app/services/data-manager/data-manager.s
 export class TodoDetailComponent {
 
     @Input() todoDetail?: Todo;  //DETAGLIO
-    @Output() todoDeleted: EventEmitter<Todo> = new EventEmitter() //DELETE
+
 
   constructor(private dataManagerServ: DataManagerService){
-    if(this.todoDetail){
-    this.dataManagerServ.deleteTodo(this.todoDetail)
-    }
+
   }
 
     deleteTodo(){
-      this.todoDeleted.emit(this.todoDetail);
+      if(this.todoDetail){
+        this.dataManagerServ.deleteTodo(this.todoDetail)
+        }
     }
 }
