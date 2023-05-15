@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { Todo } from 'src/app/models/todo';
+import { DataManagerService } from 'src/app/services/data-manager/data-manager.service';
 
 @Component({
   selector: 'app-todo-add',
@@ -10,11 +11,12 @@ export class TodoAddComponent {
 
   newTodo: Todo = { title: '', description: '', priority: 1 };
 
-  @Output() todoCreated: EventEmitter<Todo> = new EventEmitter();
+  constructor(private dataManagerServ: DataManagerService) { }
+
 
   saveTodo() {
     console.log(this.newTodo)
-    this.todoCreated.emit({...this.newTodo})
+    this.dataManagerServ.addTodo({ ...this.newTodo })
   }
 
 }
