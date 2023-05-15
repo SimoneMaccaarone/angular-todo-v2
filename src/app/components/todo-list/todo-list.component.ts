@@ -1,5 +1,4 @@
 import { Component} from '@angular/core';
-import { Todo } from 'src/app/models/todo';
 import { DataManagerService } from 'src/app/services/data-manager/data-manager.service';
 
 @Component({
@@ -9,9 +8,9 @@ import { DataManagerService } from 'src/app/services/data-manager/data-manager.s
 })
 export class TodoListComponent {
 
-todoArray?: Todo[] = [];      //default, questa proprieta puo essere riempita tramite l' HTML (input)
+// todoArray?: Todo[] = [];      //default, questa proprieta puo essere riempita tramite l' HTML (input)
 
-constructor(private dataManagerServ: DataManagerService){
+constructor(public dataManagerServ: DataManagerService){
 
 }
 
