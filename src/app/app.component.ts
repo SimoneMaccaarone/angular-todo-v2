@@ -7,7 +7,6 @@ import { Todo } from './models/todo';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'COSE DA FARE :)';
 
   todos : Todo[] = [
     {
