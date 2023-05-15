@@ -12,7 +12,6 @@ export class TodoListComponent {
 todoArray?: Todo[] = [];      //default, questa proprieta puo essere riempita tramite l' HTML (input)
 
 constructor(private dataManagerServ: DataManagerService){
-  this.todoArray= this.dataManagerServ.todos;
 
 }
 

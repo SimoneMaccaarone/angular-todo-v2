@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import { Todo } from 'src/app/models/todo';
 import { DataManagerService } from 'src/app/services/data-manager/data-manager.service';
 
