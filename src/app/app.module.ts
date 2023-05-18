@@ -15,7 +15,7 @@ import { TodoAddComponent } from './components/todo-add/todo-add.component';
 import { TodoDetailComponent } from './components/todo-detail/todo-detail.component';
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { FooterComponent } from './footer/footer.component';
-
+import {MatSelectModule} from '@angular/material/select';
 
 
 @NgModule({
@@ -36,7 +36,8 @@ import { FooterComponent } from './footer/footer.component';
     MatCardModule,
     MatButtonModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    MatSelectModule,
 
   ],
   providers: [],

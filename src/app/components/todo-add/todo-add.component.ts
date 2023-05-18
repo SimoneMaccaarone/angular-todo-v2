@@ -8,12 +8,12 @@ import { DataManagerService } from 'src/app/services/data-manager/data-manager.s
   styleUrls: ['./todo-add.component.scss'],
 
 })
+
 export class TodoAddComponent {
 
   newTodo: Todo = { title: '', description: '', priority: 1 };
 
   constructor(private dataManagerServ: DataManagerService) { }
-
 
   saveTodo() {
     console.log(this.newTodo)
@@ -22,5 +22,4 @@ export class TodoAddComponent {
 }
 
 export class InputClearableExample {
-  value = 'Clear me';
 }

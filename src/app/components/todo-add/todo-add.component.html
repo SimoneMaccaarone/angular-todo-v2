@@ -1,5 +1,36 @@
 <!-- TODO ADD -->
 <h1>Aggiuni un To do</h1>
+
+<!-- ---- PRIORITA' ---- -->
+<table class="example-full-width" cellspacing="0"><tr>
+  <td><mat-form-field class="example-full-width">
+    <mat-label>Priorità</mat-label>
+    <input matInput [(ngModel)]="newTodo.priority" maxlength="1" placeholder="Ex. 1,2,3" value="1">
+  </mat-form-field></td>
+</tr>
+
+<!-- ---- TITOLO ---- -->
+<mat-form-field class="example-form-field">
+  <mat-label>Titolo</mat-label>
+  <input matInput type="text" [(ngModel)]="newTodo.title">
+  <button *ngIf="newTodo.title" matSuffix mat-icon-button aria-label="Clear" (click)="newTodo.title=''">
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-form-field>
+</table>
+<!-- ---- DESCRIZIONE ---- -->
+<p>
+  <mat-form-field class="example-full-width">
+    <mat-label>Descrizione</mat-label>
+    <textarea matInput placeholder="" [(ngModel)]="newTodo.description"></textarea>
+  </mat-form-field>
+</p>
+<br> <button class="salva-btn" mat-button (click)="saveTodo()">Salva</button>
+
+
+
+
+
 <!-- id associato al For -->
 <!-- <div>
   <label for="input-title">Inserisci Titolo</label>
@@ -10,32 +41,8 @@
   <input id="input-description" type="text" [(ngModel)]="newTodo.description">
 </div> -->
 
-<div>
+<!-- <div>
   <label for="input-priority">Inserisci Priorità</label>
   <input id="input-priority" type="text" [(ngModel)]="newTodo.priority">
 </div>
-<br>
-
-
-<!-- ---- TITOLO ---- -->
-<mat-form-field class="example-form-field">
-  <mat-label>Inserisci Titolo</mat-label>
-  <input matInput type="text" [(ngModel)]="newTodo.title">
-  <button *ngIf="newTodo.title" matSuffix mat-icon-button aria-label="Clear" (click)="newTodo.title=''">
-    <mat-icon>close</mat-icon>
-  </button>
-</mat-form-field>
-
-<!-- ---- DESCRIZIONE ---- -->
-<p>
-  <mat-form-field class="example-full-width">
-    <mat-label>Descrizione</mat-label>
-    <textarea matInput placeholder=""></textarea>
-  </mat-form-field>
-</p>
-
-<!-- ---- PRIORITA' ---- -->
-
-
-
-<br> <button (click)="saveTodo()">Salva</button>
+<br> -->
