@@ -5,7 +5,8 @@ import { DataManagerService } from 'src/app/services/data-manager/data-manager.s
 @Component({
   selector: 'app-todo-add',
   templateUrl: './todo-add.component.html',
-  styleUrls: ['./todo-add.component.scss']
+  styleUrls: ['./todo-add.component.scss'],
+
 })
 export class TodoAddComponent {
 
@@ -18,5 +19,8 @@ export class TodoAddComponent {
     console.log(this.newTodo)
     this.dataManagerServ.addTodo({ ...this.newTodo })
   }
+}
 
+export class InputClearableExample {
+  value = 'Clear me';
 }

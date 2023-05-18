@@ -1,17 +1,41 @@
 <!-- TODO ADD -->
 <h1>Aggiuni un To do</h1>
 <!-- id associato al For -->
-<div>
+<!-- <div>
   <label for="input-title">Inserisci Titolo</label>
   <input id="input-title" type="text" [(ngModel)]="newTodo.title">
-</div>
-<div>
+</div> -->
+<!-- <div>
   <label for="input-description">Inserisci Descrizione</label>
   <input id="input-description" type="text" [(ngModel)]="newTodo.description">
-</div>
+</div> -->
+
 <div>
   <label for="input-priority">Inserisci Priorità</label>
   <input id="input-priority" type="text" [(ngModel)]="newTodo.priority">
 </div>
-<button (click)="saveTodo()">Salva</button>
+<br>
 
+
+<!-- ---- TITOLO ---- -->
+<mat-form-field class="example-form-field">
+  <mat-label>Inserisci Titolo</mat-label>
+  <input matInput type="text" [(ngModel)]="newTodo.title">
+  <button *ngIf="newTodo.title" matSuffix mat-icon-button aria-label="Clear" (click)="newTodo.title=''">
+    <mat-icon>close</mat-icon>
+  </button>
+</mat-form-field>
+
+<!-- ---- DESCRIZIONE ---- -->
+<p>
+  <mat-form-field class="example-full-width">
+    <mat-label>Descrizione</mat-label>
+    <textarea matInput placeholder=""></textarea>
+  </mat-form-field>
+</p>
+
+<!-- ---- PRIORITA' ---- -->
+
+
+
+<br> <button (click)="saveTodo()">Salva</button>

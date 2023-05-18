@@ -6,6 +6,8 @@ import { FormsModule } from '@angular/forms';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatIconModule} from '@angular/material/icon';
 
 
 import { AppComponent } from './app.component';
@@ -32,7 +34,9 @@ import { FooterComponent } from './footer/footer.component';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatInputModule,
+    MatIconModule
 
   ],
   providers: [],
