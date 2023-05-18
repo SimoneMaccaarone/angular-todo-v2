@@ -1,7 +1,21 @@
-<!-- TODO DETAIL -->
-<li class=" priority{{todoDetail?.priority}}"> <!-- oppure usare un ngIf | class == priority+1/2/3  -->
+<!--  TODO DETAIL -->
+
+  <!-- oppure usare un ngIf | class == priority+1/2/3  -->
+
+<!-- <li class=" priority{{todoDetail?.priority}}">
   <h3>{{todoDetail?.title}}</h3>
   <span>{{todoDetail?.description}}</span>
   <br><button (click)="deleteTodo()">Delete</button>
-  <!-- <span>{{todoDetail?.priority}}</span> -->
-</li>
+</li>  -->
+<!-- <span>{{todoDetail?.priority}}</span> -->
+
+
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{todoDetail?.title}} </mat-card-title>
+    <mat-card-subtitle> {{todoDetail?.description}} </mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-actions align="end">
+    <button mat-button (click)="deleteTodo()">DELETE</button>
+  </mat-card-actions>
+</mat-card>
