@@ -1,11 +1,12 @@
 <!-- TODO ADD -->
-<div>
-  <p>
-    <mat-toolbar>
-      <span>Aggiungi un To Do</span>
-    </mat-toolbar>
-  </p>
+<div class="container">
+<p>
+  <mat-toolbar>
+    <span>Aggiungi un To Do</span>
+  </mat-toolbar>
+</p>
 
+<div class="todo-dialog-content" mat-dialog-content>
   <table class="example-full-width" cellspacing="0">
 
     <!-- ---- TITOLO ---- -->
@@ -39,9 +40,13 @@
     </tr>
 
     <!-- ---- SALVA ---- -->
-    <button class="salva-btn" mat-button (click)="saveTodo()">Salva</button>
-
+    <div mat-dialog-actions align="end">
+      <button class="bottoniii" mat-button mat-dialog-close>Cancella</button>
+      <button class="bottoniii" (click)="saveTodo()" mat-button mat-dialog-close cdkFocusInitial>Salva</button>
+    </div>
   </table>
+
+</div>
 </div>
 
 

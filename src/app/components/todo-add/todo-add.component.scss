@@ -2,12 +2,11 @@ mat-toolbar{
   border-radius: 4px;
 }
 .example-form-field {
-  width: 500px;
+  width: 100%;
 }
 
 .example-form {
   min-width: 20px;
-  max-width: 500px;
   width: 100%;
 
 }
@@ -15,9 +14,12 @@ mat-toolbar{
   width: 100%;
 }
 
+
+
 td {
   padding-right: 8px;
 }
 div{
   margin: 10px;
 }
+
