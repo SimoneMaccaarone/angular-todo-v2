@@ -11,15 +11,6 @@ export class DataManagerService {
   constructor() {
     this.todos = [
       {
-        title: 'Regalo alla Nonna',
-        description: 'compra il profumo che le piace tanto',
-        priority: 2
-      },
-      {
-        title: 'Compra il pane',
-        priority: 1
-      },
-      {
         title: 'Cucinare la Coca',
         description: 'beh che dire...',
         priority: 3
