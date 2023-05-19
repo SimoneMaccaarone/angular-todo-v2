@@ -1,23 +1,22 @@
 .super-card{
   text-align: center;
-  width: 50%;
-  position: relative;
-  margin: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .priority1 {
-  border: solid 3px green;
+  border-left: solid 8px green;
   border-radius: 4px;
 }
 
 .priority2 {
-  border: solid 3px orange;
+  border-left: solid 8px orange;
   border-radius: 4px;
 
 }
 
 .priority3 {
-  border: solid 3px red;
+  border-left: solid 8px red;
   border-radius: 4px;
 
 }

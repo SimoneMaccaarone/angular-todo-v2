@@ -10,8 +10,7 @@
 <!-- <span>{{todoDetail?.priority}}</span> -->
 
 
-<mat-card class="super-card">
-  <div class=" priority{{todoDetail?.priority}}">
+<mat-card class="super-card priority{{todoDetail?.priority}}">
   <mat-card-header>
     <mat-card-title>{{todoDetail?.title}} </mat-card-title>
     <mat-card-subtitle> {{todoDetail?.description}} </mat-card-subtitle>
@@ -19,5 +18,4 @@
   <mat-card-actions align="end">
     <button mat-button (click)="deleteTodo()">Delete</button>
   </mat-card-actions>
-</div>
 </mat-card>
