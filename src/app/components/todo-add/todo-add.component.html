@@ -1,4 +1,5 @@
 <!-- TODO ADD -->
+<div>
 <p>
   <mat-toolbar>
     <span>Aggiungi un To Do</span>
@@ -13,6 +14,15 @@
   </mat-form-field></td>
 </tr>
 
+<mat-form-field>
+  <mat-label>Priorità</mat-label>
+  <mat-select>
+    <mat-option value="1">Bassa</mat-option>
+    <mat-option value="2">Media</mat-option>
+    <mat-option value="3">Alta</mat-option>
+
+  </mat-select>
+</mat-form-field>
 <!-- ---- TITOLO ---- -->
 <mat-form-field class="example-form-field">
   <mat-label>Titolo</mat-label>
@@ -29,7 +39,9 @@
     <textarea matInput placeholder="" [(ngModel)]="newTodo.description"></textarea>
   </mat-form-field>
 </p>
-<br> <button class="salva-btn" mat-button (click)="saveTodo()">Salva</button>
+<button class="salva-btn" mat-button (click)="saveTodo()">Salva</button>
+
+
 
 
 

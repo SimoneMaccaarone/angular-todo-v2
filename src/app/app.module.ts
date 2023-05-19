@@ -16,6 +16,7 @@ import { TodoDetailComponent } from './components/todo-detail/todo-detail.compon
 import { TodoListComponent } from './components/todo-list/todo-list.component';
 import { FooterComponent } from './footer/footer.component';
 import {MatSelectModule} from '@angular/material/select';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 @NgModule({
@@ -38,7 +39,7 @@ import {MatSelectModule} from '@angular/material/select';
     MatInputModule,
     MatIconModule,
     MatSelectModule,
-
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { TodoAddComponent } from './components/todo-add/todo-add.component';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +8,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title(title: any) {
-    throw new Error('Method not implemented.');
-  }
+title= 'angular todo'
+
+
+constructor(public dialog: MatDialog){
+
+}
+
+openModal(){
+  this.dialog.open(TodoAddComponent)
+}
+
+
 }
