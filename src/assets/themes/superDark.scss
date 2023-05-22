@@ -1,3 +1,6 @@
+@use '@angular/material' as mat;
+@include mat.core();
+
 /* For use in src/lib/core/theming/_palette.scss */
 $primary-color-palette: (
     50 : #fdffe1,
@@ -67,7 +70,7 @@ $secondary-color-palette: (
 );
 
 /* For use in src/lib/core/theming/_palette.scss */
-$warm-green-palette: (
+$warn-palette: (
     50 : #efffe1,
     100 : #d6feb3,
     200 : #bbfd81,
@@ -99,4 +102,20 @@ $warm-green-palette: (
         A700 : #000000,
     )
 );
+
+$my-primary: mat.define-palette($primary-color-palette, 500);
+$my-secondary: mat.define-palette($secondary-color-palette, 200, 300, 500);
+$my-warn: mat.define-palette($warn-palette,600);
+
+//TEMA CHIARO /LIGHT
+$my-theme: mat.define-light-theme((
+ color: (
+   primary: $my-primary,
+   accent: $my-secondary,
+   warn: $my-warn,
+ ),
+ density: 0,
+));
+
+@include mat.all-component-themes($my-theme);
 
