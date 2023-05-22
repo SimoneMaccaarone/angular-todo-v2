@@ -3,119 +3,120 @@
 
 /* For use in src/lib/core/theming/_palette.scss */
 $primary-color-palette: (
-    50 : #fdffe1,
-    100 : #fbfeb3,
-    200 : #f9fd81,
-    300 : #f6fc4f,
-    400 : #f4fc29,
-    500 : #f2fb03,
-    600 : #f0fa03,
-    700 : #eefa02,
-    800 : #ecf902,
-    900 : #e8f801,
-    A100 : #ffffff,
-    A200 : #feffeb,
-    A400 : #faffb8,
-    A700 : #f8ff9f,
-    contrast: (
-        50 : #000000,
-        100 : #000000,
-        200 : #000000,
-        300 : #000000,
-        400 : #000000,
-        500 : #000000,
-        600 : #000000,
-        700 : #000000,
-        800 : #000000,
-        900 : #000000,
-        A100 : #000000,
-        A200 : #000000,
-        A400 : #000000,
-        A700 : #000000,
-    )
+  50 : #e3ffe1,
+  100 : #b9feb3,
+  200 : #8afd81,
+  300 : #5bfc4f,
+  400 : #37fc29,
+  500 : #14fb03,
+  600 : #12fa03,
+  700 : #0efa02,
+  800 : #0bf902,
+  900 : #06f801,
+  A100 : #ffffff,
+  A200 : #ecffeb,
+  A400 : #b9ffb8,
+  A700 : #9fff9f,
+  contrast: (50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
 );
 
 /* For use in src/lib/core/theming/_palette.scss */
 $secondary-color-palette: (
-    50 : #e2e1ff,
-    100 : #b6b3fe,
-    200 : #8581fd,
-    300 : #544ffc,
-    400 : #3029fc,
-    500 : #0b03fb,
-    600 : #0a03fa,
-    700 : #0802fa,
-    800 : #0602f9,
-    900 : #0301f8,
-    A100 : #ffffff,
-    A200 : #ebebff,
-    A400 : #b8b8ff,
-    A700 : #9f9fff,
-    contrast: (
-        50 : #000000,
-        100 : #000000,
-        200 : #000000,
-        300 : #ffffff,
-        400 : #ffffff,
-        500 : #ffffff,
-        600 : #ffffff,
-        700 : #ffffff,
-        800 : #ffffff,
-        900 : #ffffff,
-        A100 : #000000,
-        A200 : #000000,
-        A400 : #000000,
-        A700 : #000000,
-    )
+  50 : #fce1ff,
+  100 : #f9b3fe,
+  200 : #f581fd,
+  300 : #f04ffc,
+  400 : #ed29fc,
+  500 : #ea03fb,
+  600 : #e703fa,
+  700 : #e402fa,
+  800 : #e102f9,
+  900 : #db01f8,
+  A100 : #ffffff,
+  A200 : #fcebff,
+  A400 : #f6b8ff,
+  A700 : #f29fff,
+  contrast: (50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
 );
 
 /* For use in src/lib/core/theming/_palette.scss */
 $warn-palette: (
-    50 : #efffe1,
-    100 : #d6feb3,
-    200 : #bbfd81,
-    300 : #9ffc4f,
-    400 : #8bfc29,
-    500 : #76fb03,
-    600 : #6efa03,
-    700 : #63fa02,
-    800 : #59f902,
-    900 : #46f801,
-    A100 : #ffffff,
-    A200 : #f0ffeb,
-    A400 : #c8ffb8,
-    A700 : #b4ff9f,
-    contrast: (
-        50 : #000000,
-        100 : #000000,
-        200 : #000000,
-        300 : #000000,
-        400 : #000000,
-        500 : #000000,
-        600 : #000000,
-        700 : #000000,
-        800 : #000000,
-        900 : #000000,
-        A100 : #000000,
-        A200 : #000000,
-        A400 : #000000,
-        A700 : #000000,
-    )
+  50 : #e1e3ff,
+  100 : #b3b8fe,
+  200 : #8189fd,
+  300 : #4f5afc,
+  400 : #2936fc,
+  500 : #0313fb,
+  600 : #0311fa,
+  700 : #020efa,
+  800 : #020bf9,
+  900 : #0106f8,
+  A100 : #ffffff,
+  A200 : #ebecff,
+  A400 : #b8b9ff,
+  A700 : #9f9fff,
+  contrast: (50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
 );
 
-$my-primary: mat.define-palette($primary-color-palette, 500);
-$my-secondary: mat.define-palette($secondary-color-palette, 200, 300, 500);
-$my-warn: mat.define-palette($warn-palette,600);
 
-//TEMA CHIARO /LIGHT
-$my-theme: mat.define-light-theme((
- color: (
-   primary: $my-primary,
-   accent: $my-secondary,
-   warn: $my-warn,
- ),
- density: 0,
-));
+$my-primary-dark: mat.define-palette($primary-color-palette, 500);
+$my-secondary-dark: mat.define-palette($secondary-color-palette,500);
+
+$my-primary-light: mat.define-palette($secondary-color-palette, 500);
+$my-secondary-light: mat.define-palette($primary-color-palette,500);
+
+
+
+$my-warn: mat.define-palette($warn-palette, 600);
+
+//TEMA Scuro / Dark
+$my-theme: mat.define-dark-theme((color: (primary: $my-primary-dark,
+        accent: $my-secondary,
+        warn: $my-warn,
+      ),
+      density: 0,
+    ));
 
 @include mat.all-component-themes($my-theme);
-
