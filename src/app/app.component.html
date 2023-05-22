@@ -3,9 +3,15 @@
 
   <mat-toolbar color="primary">
     <span>Angular To Do</span>
+
+<span class="spacer"></span>
+
+    <button mat-icon-button class="theme-btn" aria-label="theme">
+      <mat-icon>light_mode</mat-icon>
+    </button>
   </mat-toolbar>
-  <app-todo-list></app-todo-list> <!-- ponte tra proprieta tra  'APP Component' e 'todoArray'-->
-  <!-- <app-todo-add></app-todo-add>  ora è dentro a Dialog-->
+
+  <app-todo-list></app-todo-list> <!-- ponte tra proprieta tra  'APP Component' e 'todoArray'--> <!-- <app-todo-add></app-todo-add>  ora è dentro a Dialog-->
 
   <button (click)="openModal()" mat-fab class="add-btn"  color="accent" aria-label="add Todo" >
     <mat-icon>add</mat-icon>

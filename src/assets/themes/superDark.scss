@@ -102,21 +102,33 @@ $warn-palette: (
 
 
 $my-primary-dark: mat.define-palette($primary-color-palette, 500);
-$my-secondary-dark: mat.define-palette($secondary-color-palette,500);
+$my-secondary-dark: mat.define-palette($secondary-color-palette, 500);
 
 $my-primary-light: mat.define-palette($secondary-color-palette, 500);
-$my-secondary-light: mat.define-palette($primary-color-palette,500);
+$my-secondary-light: mat.define-palette($primary-color-palette, 500);
 
 
 
 $my-warn: mat.define-palette($warn-palette, 600);
 
-//TEMA Scuro / Dark
-$my-theme: mat.define-dark-theme((color: (primary: $my-primary-dark,
-        accent: $my-secondary,
+// ---- TEMA Scuro / Dark ----
+$my-theme-dark: mat.define-dark-theme((color: (primary: $my-primary-dark,
+        accent: $my-secondary-dark,
         warn: $my-warn,
       ),
       density: 0,
     ));
 
-@include mat.all-component-themes($my-theme);
+// ---- TEMA Chiaro / Light ----
+$my-theme-light: mat.define-light-theme((color: (primary: $my-primary-light,
+        accent: $my-secondary-light,
+        warn: $my-warn,
+      ),
+      density: 0,
+    ));
+
+@include mat.all-component-themes($my-theme-dark);
+
+.light-mode{
+  @include mat.all-component-themes($my-theme-light);
+}
