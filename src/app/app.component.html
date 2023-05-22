@@ -6,8 +6,8 @@
 
 <span class="spacer"></span>
 
-    <button mat-icon-button class="theme-btn" aria-label="theme">
-      <mat-icon>light_mode</mat-icon>
+    <button (click)="changeTheme()" mat-icon-button class="theme-btn" aria-label="theme">
+      <mat-icon>{{isDark? "light_mode":"dark_mode"}}</mat-icon>
     </button>
   </mat-toolbar>
 

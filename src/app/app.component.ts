@@ -9,7 +9,7 @@ import { TodoAddComponent } from './components/todo-add/todo-add.component';
 })
 export class AppComponent {
 title= 'angular todo'
-
+isDark = true;
 
 constructor(public dialog: MatDialog){
 
@@ -17,6 +17,12 @@ constructor(public dialog: MatDialog){
 
 openModal(){
   this.dialog.open(TodoAddComponent)
+}
+
+changeTheme(){
+document.body.classList.toggle('light-mode');
+this.isDark = !this.isDark;
+
 }
 
 
